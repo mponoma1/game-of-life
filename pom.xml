@@ -11,7 +11,7 @@
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>0.9.7</easyb.version>
-        <cobertura.version>2.6</cobertura.version>
+        <cobertura.version>2.7</cobertura.version>
         <!-- A workaround for a bug in PMD -->
         <sourceJdk>1.8</sourceJdk>
         <targetJdk>1.8</targetJdk>
@@ -97,6 +97,12 @@
                         </goals>
                     </execution>
                 </executions>
+		<configuration>
+                    <excludes>
+                       <!-- Exclude class from test coverage -->
+                       <exclude>**/*com/wakaleo/gameoflife/domain/GridWriter</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
 
             <plugin>
