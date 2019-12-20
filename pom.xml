@@ -100,7 +100,7 @@
 		<configuration>
                     <excludes>
                        <!-- Exclude class from test coverage -->
-                       <exclude>**/*com/wakaleo/gameoflife/domain/GridWriter</exclude>
+                       <exclude>**/*com/wakaleo/gameoflife/domain/GridWriter.java</exclude>
                     </excludes>
                 </configuration>
             </plugin>
