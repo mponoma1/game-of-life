@@ -105,6 +105,8 @@
                 <version>4.0.4</version>
                 <configuration>
                     <targetPercentage>70%</targetPercentage>
+		    <generateHtml>true</generateHtml>
+            	    <generateXml>true</generateXml>
                 </configuration>
                 <executions>
                     <execution>
